@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signout_popup_group">
+    <TextView android:id="@+id/signout_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:clickable="true"
+        android:text="Sign Out"
+        android:background="@color/white"
+        android:padding="5dp"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">My Pooja</string>
+    <string name="title_activity_main">My Pooja</string>
+    <string name="title_activity_pujari_listing">Find Pujari</string>
+    <string name="title_activity_pujari_profile">Pujari Profile</string>
+
+    <string name="find_pujari">Find Pujari</string>
+    <string name="book_pooja">Book Pooja</string>
+    <string name="buy_saamagri">Buy Saamagri</string>
+
+    <string name="pujari_filter_select_pooja">Select Pooja</string>
+    <string name="pujari_filter_select_area">Select Area</string>
+    <string name="pujari_filter_select_languages">Select Language</string>
+    <string name="pujari_filter_select_caste">Select Caste</string>
+    <string name="pujari_filter_select_date">Select Date</string>
+    <string name="pujari_filter_select_time">Select Time</string>
+    <string name="pujari_filter_type_title">Choose Pujari Search Filters</string>
+    <string name="pujari_filter_menu">Pujari Filter</string>
+    <string name="pujari_filter_apply_filter_button">Apply Filters</string>
+
+    <string name="age_label">Age: </string>
+    <string name="community_label">Community: </string>
+    <string name="language_label">Languages: </string>
+    <string name="experience_label">Experience (yrs): </string>
+    <string name="affiliation_label">Affiliation: </string>
+    <string name="rating_label">Rating: </string>
+    <string name="areas_served_label">Areas Served: </string>
+    <string name="city_label">Residing Place: </string>
+    <string name="address_label">Address: </string>
+    <string name="email_label">Email: </string>
+    <string name="pujari_about">About Me</string>
+    <string name="pujas_performed">Pujas Performed</string>
+    <string name="pujari_reviews">Reviews</string>
+    <string name="pujari_rating">Ratings</string>
+
+</resources>

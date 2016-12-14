@@ -1,0 +1,286 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fazmart.androidapp.View.SellerProfile.SellerProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:id="@+id/PujariProfileScrollView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_loading_message" android:id="@+id/loading_message"/>
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProductList">
+
+            <LinearLayout android:id="@+id/ImageSection"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/iskcon">
+                <ImageView android:id="@+id/Image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_medium_material"
+                android:textColor="@color/white"
+                android:background="@color/primary_color_dark"
+                android:gravity="center_horizontal"
+                android:padding="3dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView android:id="@+id/CommunityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/community_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/Community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/CommunityLabel"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/AffiliationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/CommunityLabel"
+                    android:text="@string/affiliation_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/Affiliation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/CommunityLabel"
+                    android:layout_toRightOf="@id/AffiliationLabel"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/LanguageLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AffiliationLabel"
+                    android:text="@string/language_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/Languages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AffiliationLabel"
+                    android:layout_toRightOf="@id/LanguageLabel"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView android:id="@+id/AreasLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Languages"
+                    android:text="@string/areas_served_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold" />
+
+                <TextView android:id="@+id/Areas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Languages"
+                    android:layout_toRightOf="@id/AreasLabel"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/AddressLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Areas"
+                    android:text="@string/address_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold" />
+
+                <TextView android:id="@+id/Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Areas"
+                    android:layout_toRightOf="@id/AddressLabel"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/EmailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Address"
+                    android:text="@string/email_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold" />
+
+                <TextView android:id="@+id/Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Address"
+                    android:layout_toRightOf="@id/EmailLabel"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout android:id="@+id/RatingImage"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Email" >
+                    <ImageView android:id="@+id/RatingStar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView android:id="@+id/RatingStar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView android:id="@+id/RatingStar3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView android:id="@+id/RatingStar4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView android:id="@+id/RatingStar5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView android:id="@+id/RatingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Email"
+                    android:layout_toRightOf="@id/RatingImage"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="@dimen/abc_text_size_small_material" />
+
+                <TextView android:id="@+id/Reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Email"
+                    android:layout_toRightOf="@id/RatingCount"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textColor="@color/blue"/>
+
+                <TextView android:id="@+id/ReviewsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Email"
+                    android:layout_toRightOf="@id/Reviews"
+                    android:text="@string/pujari_reviews"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textColor="@color/blue"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView android:id="@+id/AboutLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pujari_about"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView android:id="@+id/ExperienceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AboutLabel"
+                    android:text="@string/experience_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/Experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AboutLabel"
+                    android:layout_toRightOf="@id/ExperienceLabel"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/Age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AboutLabel"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/AgeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AboutLabel"
+                    android:layout_toLeftOf="@id/Age"
+                    android:text="@string/age_label"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView android:id="@+id/AboutPujari"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ExperienceLabel"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:autoLink="web" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_shade_1"/>
+
+            <com.mypooja.androidapp.Common.View.SlidingTabLayout
+                android:id="@+id/SlidingTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/PujariProfilePager"
+                android:layout_width="match_parent"
+                android:layout_height="480dp">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

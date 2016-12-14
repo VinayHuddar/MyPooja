@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="10dp" android:paddingBottom="10dp"
+    android:clickable="true">
+
+    <ImageView android:id="@+id/Photo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Photo"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/AgeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_toRightOf="@id/Photo"
+        android:text="@string/age_label"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_toRightOf="@id/AgeLabel"
+        android:layout_marginLeft="3dp"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/CasteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_toRightOf="@+id/Photo"
+        android:layout_marginLeft="100dp"
+        android:text="@string/community_label"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/Caste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:layout_toRightOf="@id/CasteLabel"
+        android:layout_marginLeft="3dp"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/RatingCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AgeLabel"
+        android:layout_toRightOf="@+id/Photo"
+        android:text="@string/rating_label"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/RatingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AgeLabel"
+        android:layout_toRightOf="@id/RatingCount"
+        android:layout_marginLeft="3dp"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/ExperienceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AgeLabel"
+        android:layout_toRightOf="@id/Photo"
+        android:layout_marginLeft="100dp"
+        android:text="@string/experience_label"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/Experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AgeLabel"
+        android:layout_toRightOf="@id/ExperienceLabel"
+        android:layout_marginLeft="3dp"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/LanguageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RatingCount"
+        android:layout_toRightOf="@id/Photo"
+        android:text="@string/language_label"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView android:id="@+id/Languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RatingCount"
+        android:layout_toRightOf="@id/LanguageLabel"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp" />
+
+    <TextView android:id="@+id/AreasLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Languages"
+        android:layout_toRightOf="@id/Photo"
+        android:text="@string/areas_served_label"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+    <TextView android:id="@+id/Areas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Languages"
+        android:layout_toRightOf="@id/AreasLabel"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"/>
+</RelativeLayout>

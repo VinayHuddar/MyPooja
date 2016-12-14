@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/NavigationDrawer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@color/primary_color_light_shade_2"
+        android:id="@+id/navigationHeader"
+        android:paddingTop="24dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/userImage"
+            android:src="@drawable/joy_logo"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp">
+            <TextView android:id="@+id/signin"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textIsSelectable="false"
+                android:drawablePadding="16dp"
+                android:clickable="true"/>
+            <ImageView android:id="@+id/signout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_overflow"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:nestedScrollingEnabled="false"
+                android:clickable="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical"
+        android:focusable="true"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/navigationHeader"/>
+
+</RelativeLayout>

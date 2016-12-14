@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <TextView android:id="@+id/FilterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pujari_filter_type_title"
+        android:textColor="@color/white"
+        android:background="@color/primary_color"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout android:id="@+id/Footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary_color_light_shade_3"
+        android:gravity="center|center_vertical">
+        <TextView android:id="@+id/ApplyFilterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pujari_filter_apply_filter_button"
+            android:textColor="@color/white"
+            android:background="@drawable/round_corner_primary_color_box"
+            android:layout_gravity="center"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" />
+    </LinearLayout>
+    <ScrollView android:id="@+id/PujariFilterScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FilterTitle"
+        android:layout_above="@id/Footer">
+    
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:id="@+id/FilterDrawer"
+            android:fitsSystemWindows="true">
+    
+            <CheckedTextView android:id="@+id/SelectPooja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pujari_filter_select_pooja"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/grey_shade_2"/>
+            <ListView android:id="@+id/SelectedPoojaFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_shade_2"
+                android:paddingLeft="20dp"
+                android:dividerHeight="0dp"
+                android:divider="@color/grey_shade_2"/>
+
+            <CheckedTextView android:id="@+id/SelectCaste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pujari_filter_select_caste"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/grey_shade_2"/>
+            <TextView android:id="@+id/SelectedCasteFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_shade_2"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:textColor="@color/primary_color_dark"
+                android:paddingLeft="20dp"
+                android:visibility="gone"/>
+
+            <CheckedTextView android:id="@+id/SelectLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pujari_filter_select_languages"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/grey_shade_2"/>
+            <ListView android:id="@+id/SelectedLanguageFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_shade_2"
+                android:paddingLeft="20dp"
+                android:dividerHeight="0dp"
+                android:divider="@color/grey_shade_2"/>
+
+            <CheckedTextView android:id="@+id/SelectArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pujari_filter_select_area"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/grey_shade_2"/>
+            <ListView android:id="@+id/SelectedAreaFilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_shade_2"
+                android:paddingLeft="20dp"
+                android:dividerHeight="0dp"
+                android:divider="@color/grey_shade_2"/>
+
+            <CheckedTextView android:id="@+id/SelectPoojaDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pujari_filter_select_date"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/grey_shade_2"/>
+            <TextView android:id="@+id/SelectedDateFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_shade_2"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:textColor="@color/primary_color_dark"
+                android:paddingLeft="20dp"
+                android:visibility="gone"/>
+
+            <CheckedTextView android:id="@+id/SelectPoojaTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pujari_filter_select_time"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black"
+                android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/grey_shade_2"/>
+            <TextView android:id="@+id/SelectedTimeFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_shade_2"
+                android:textSize="@dimen/abc_text_size_caption_material"
+                android:textColor="@color/primary_color_dark"
+                android:paddingLeft="20dp"
+                android:visibility="gone"/>
+
+            <TextView android:id="@+id/SelectFiltersLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@color/grey_shade_1"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+
+            <FrameLayout android:id="@+id/FilterItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+    
+                <ListView android:id="@+id/SelectPoojaFilterList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="multipleChoice"
+                    android:visibility="invisible"/>
+
+                <ListView android:id="@+id/SelectCasteFilterList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:visibility="invisible"/>
+
+                <ListView android:id="@+id/SelectLanguageFilterList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="multipleChoice"
+                    android:visibility="invisible"/>
+
+                <ListView android:id="@+id/SelectAreaFilterList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="multipleChoice"
+                    android:visibility="invisible"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

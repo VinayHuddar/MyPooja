@@ -1,0 +1,22 @@
+<resources>
+
+    <color name="primary_color">#FF5A2E</color>
+    <color name="primary_color_dark">#E93200</color>
+    <color name="accent_color">#FF7D5A</color>
+    <color name="WindowBackground">#f4f4f4</color>
+    <color name="TextPrimaryColor">#3C3C3C</color>
+    <color name="TextSecondaryColor">#646464</color>
+
+    <color name="primary_color_light_shade_1">#FF7854</color>
+    <color name="primary_color_light_shade_2">#FF997E</color>
+    <color name="primary_color_light_shade_3">#80FF997E</color>
+
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="grey_shade_1">#f4f4f4</color>
+    <color name="grey_shade_2">#e0e0e0</color>
+
+</resources>
